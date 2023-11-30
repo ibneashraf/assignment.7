@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7</title>
+</head>
+<body>
+    <script>
+       
+       
+//---------------------------------------- Task 1
+ // Ask the user to enter a city name
+var cityName = prompt("Enter a city name:");
+if (cityName == "karachi") {
+    alert("Welcome to the city of lights");
+} 
+
+//-----------------------------------------Task 2
+ // Ask the user to enter their gender
+var gender = prompt("Please enter your gender (male or female):");
+
+    if(gender == "male") {
+       alert("Good Morning Sir.");
+    } else 
+    if (gender == "female") {
+        alert("Good Morning Ma’am.");
+    } 
+
+//  //-----------------------------------------Task 3
+
+// Ask the user to enter the color of the traffic signal
+var signalColor = prompt("Enter the color of the traffic signal (red, yellow, or green):");
+if(signalColor == "red"){
+    document.write("Must STOP! The light is red.");
+}else
+if(signalColor == "yellow"){
+   document.write("Ready to Move! The light is yellow.");
+          
+}else
+if(signalColor == "green"){
+    document.write("Move Now! The light is green.");
+}
+
+// //-----------------------------------------Task 4
+
+    // Ask the user to enter the remaining fuel in the car (in liters)
+var remainingFuel = prompt("Enter the remaining fuel in your car (in liters):");
+if (remainingFuel < 0.25) {
+    alert("Please refill the fuel in your car.");
+}
+
+//---------------------------------------------Task 5
+
+
+var b = 82;
+if (b++ === 83) {
+    alert("given condition for variable b is true");// false
+}
+
+var c = 12;
+if (c++ === 13) {
+    alert("condition 1 is true");// false
+}
+if (c === 13) {
+    alert("condition 2 is true");
+}
+if (++c < 14) {
+    alert("condition 3 is true");
+}
+if (c === 14) {
+    alert("condition 4 is true");
+}
+
+var materialCost = 20000;
+var laborCost = 2000;
+var totalCost = materialCost + laborCost;
+if (totalCost === laborCost + materialCost) {
+    alert("The cost equals (22000)");
+}
+
+if (true) {
+    alert("True");
+}
+if (false) {
+    alert("False");
+}
+
+ if("car" < "cat"){
+alert("car is smaller than cat");
+} // ye Alphabets k lihaz se word k last letter ko dekh rha he
+
+//-------------------------------------------Task 6
+
+// Ask the user to enter marks for three subjects and total marks
+var subject1Marks = parseFloat (prompt("Enter marks obtained in computer:"))
+var subject2Marks = parseFloat (prompt("Enter marks obtained in Urdu:"))
+var subject3Marks = parseFloat (prompt("Enter marks obtained in English:"))
+var totalMarks =300
+
+// Calculate the total marks obtained
+var totalObtainedMarks = subject1Marks + subject2Marks + subject3Marks
+// Calculate the percentage
+var percentage =  totalObtainedMarks/totalMarks * 100;
+// Determine the grade based on the percentage
+if (percentage >= 80) {
+    grade = "A-one";
+    remarks = "Excellent";
+}else
+  
+ if (percentage >= 70) {
+    grade = "A";
+    remarks = "Good";
+} else 
+if (percentage >= 60) {
+    grade = "B";
+    remarks = "You need to improve";
+} else if (percentage < 60) {
+    grade = "Fail";
+    remarks = "Sorry ";
+} 
+// Display the results on the page
+document.write("<h2>Result</h2>");
+document.write("Total Marks:"+ totalMarks + "<br>");
+document.write("Marks Obtained:" + totalObtainedMarks + "<br>");
+document.write("Percentage:" +percentage+ "% " + "<br>");
+document.write("Grade:" + grade + "<br>");
+document.write("Remarks:" + remarks  + "<br>");
+
+
+    </script>
+</body>
+</html>
